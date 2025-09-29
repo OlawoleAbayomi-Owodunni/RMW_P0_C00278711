@@ -3,8 +3,8 @@ import { cubesFilt } from '../filters/cubeFilter';
 
 describe('Cube filter', () => {
   it('cubes a sequence', () => {
-    const input = [1, 3, 5, 7, 9, 999];
-    const expected = [1, 27, 125, 343, 729, 997002999];
+    const input = [1, 3, 4, 7, 9, 999];
+    const expected = [1, 27, 64, 343, 729, 997002999];
     expect(cubesFilt(input)).toEqual(expected);
   });
 });
